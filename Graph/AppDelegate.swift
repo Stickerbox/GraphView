@@ -3,7 +3,7 @@
 //  Graph
 //
 //  Created by Jordan.Dixon on 20/07/2017.
-//  Copyright © 2017 Mubaloo. All rights reserved.
+//  Copyright © 2017 Jordan Dixon. All rights reserved.
 //
 
 import UIKit

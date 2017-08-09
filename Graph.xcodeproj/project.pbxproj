@@ -12,6 +12,10 @@
 		9C44605D1F20875700F0381D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C44605B1F20875700F0381D /* Main.storyboard */; };
 		9C44605F1F20875700F0381D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C44605E1F20875700F0381D /* Assets.xcassets */; };
 		9C4460621F20875700F0381D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4460601F20875700F0381D /* LaunchScreen.storyboard */; };
+		9C44606A1F20876500F0381D /* GraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C4460691F20876500F0381D /* GraphView.xib */; };
+		9C44606C1F20877400F0381D /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44606B1F20877400F0381D /* GraphView.swift */; };
+		9C44606E1F2088A900F0381D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44606D1F2088A900F0381D /* Helpers.swift */; };
+		9C4460701F2089F400F0381D /* BarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44606F1F2089F400F0381D /* BarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9C44605E1F20875700F0381D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C4460611F20875700F0381D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C4460631F20875700F0381D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4460691F20876500F0381D /* GraphView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GraphView.xib; sourceTree = "<group>"; };
+		9C44606B1F20877400F0381D /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = SOURCE_ROOT; };
+		9C44606D1F2088A900F0381D /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9C44606F1F2089F400F0381D /* BarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				9C44605E1F20875700F0381D /* Assets.xcassets */,
 				9C4460601F20875700F0381D /* LaunchScreen.storyboard */,
 				9C4460631F20875700F0381D /* Info.plist */,
+				9C4460691F20876500F0381D /* GraphView.xib */,
+				9C44606B1F20877400F0381D /* GraphView.swift */,
+				9C44606D1F2088A900F0381D /* Helpers.swift */,
+				9C44606F1F2089F400F0381D /* BarCell.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -96,8 +108,8 @@
 				TargetAttributes = {
 					9C4460531F20875700F0381D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 84G9FJR5U9;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 8MMCHWVX54;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,6 +139,7 @@
 				9C4460621F20875700F0381D /* LaunchScreen.storyboard in Resources */,
 				9C44605F1F20875700F0381D /* Assets.xcassets in Resources */,
 				9C44605D1F20875700F0381D /* Main.storyboard in Resources */,
+				9C44606A1F20876500F0381D /* GraphView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C44605A1F20875700F0381D /* ViewController.swift in Sources */,
+				9C4460701F2089F400F0381D /* BarCell.swift in Sources */,
 				9C4460581F20875700F0381D /* AppDelegate.swift in Sources */,
+				9C44606C1F20877400F0381D /* GraphView.swift in Sources */,
+				9C44606E1F2088A900F0381D /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 84G9FJR5U9;
+				DEVELOPMENT_TEAM = 8MMCHWVX54;
 				INFOPLIST_FILE = Graph/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mubaloo.Graph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "646227d6-4f44-418b-9a7a-5fbe56e1feab";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode-8-Wildcard";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 84G9FJR5U9;
+				DEVELOPMENT_TEAM = 8MMCHWVX54;
 				INFOPLIST_FILE = Graph/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mubaloo.Graph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "646227d6-4f44-418b-9a7a-5fbe56e1feab";
+				PROVISIONING_PROFILE_SPECIFIER = "Xcode-8-Wildcard";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +324,7 @@
 				9C4460681F20875700F0381D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
